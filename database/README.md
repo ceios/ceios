@@ -7,6 +7,13 @@
 When updating README.md, take a look at overview.rst and consider if you should
 make the same updates there.
 -->
+# Disarm-AttackFlow Builder
+
+The Disarm-AttackFlow Builder is a modified version of the MITRE AttackFlow Builder that integrates the tactics
+and techniques of the DISARM framework into the application. The application maintains all functionalities, and 
+allows a user to build models using the unified framework and export them in STIX language format. All the 
+DISARM tactics and techniques have STIX objects associated with them to a comprable standard to the MITRE ATT&CK 
+STIX objects.
 
 # Attack Flow
 
