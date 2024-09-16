@@ -1,0 +1,5 @@
+On the 23rd of December, 2015, BlackEnergy and KillDisk malware rendered 225,000 Western Ukrainian residents were left without power for up to six hours via a hack of three Ukrainian energy distribution companies. 
+When power was restored, the companies performed under constrained operations. 
+The computer systems were hacked initially through spearphishing emails. 
+BlackEnergy malware was used to steal user credentials, perform reconnaissance activities, and was then likely used to disrupt the transmission and distribution substation within the Ukrainian power grid. 
+KillDisk was used at the conclusion of the operation to delete computer event logs and other files before rendering the infected computers inoperable.
