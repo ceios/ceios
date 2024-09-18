@@ -15,6 +15,10 @@ allows a user to build models using the unified framework and export them in STI
 DISARM tactics and techniques have STIX objects associated with them to a comprable standard to the MITRE ATT&CK 
 STIX objects.
 
+### Setup of the application 
+
+To use the Disarm-AttackFlow Builder, follow the same steps provided by Mitre for the base application - using this repository in place of Mitres.
+
 # Attack Flow
 
 Attack Flow is a language for describing how cyber adversaries combine and sequence various offensive
