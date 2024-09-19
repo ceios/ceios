@@ -2,6 +2,8 @@
 
 This repository contains a database of cyber-enabled influence operations (CEIOs). We propose a unified model to describe and visualise these CEIOs. Our model combines the MITRE ATT&CK and DISARM frameworks, which denote cyberattack and influence components, respectively. The MITRE AttackFlow Builder application is modified to include DISARM framework objects and enable CEIO modelling with the unified framework.
 
+Please watch this video for a brief summary of the project: https://www.youtube.com/watch?v=EPoUemaOvIg
+
 ## Cyber-Enabled Influence Operation Database
 
 CEIO Analysis: Background, Documentation, and Modelling of Cyber and Disinformation Components.
