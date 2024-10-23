@@ -17,79 +17,36 @@ STIX objects.
 
 ### Setup of the application 
 
-To use the Disarm-AttackFlow Builder, follow the same steps provided by Mitre for the base application - using this repository in place of Mitres.
+To use the Disarm-AttackFlow Builder, follow the same steps provided by Mitre for the base application - using this repository in place of Mitres. Once Mitre's Attack Flow Builder is installed, then follow these steps a series of steps to set-up CEIO builder:
+- Download a local version of the ‘ceios’ GitHub repository.
+-	Navigate to the downloaded copy of the repository. Within the repository, navigate to the ‘/builder’ folder.
+-	Install Poetry in this location:
+    - Use command ‘pipx install poetry’
+    -	Before installing poetry, ensure python is installed and the version is 3.8 or higher. This can be checked using the command “python –version.”         Additionally, install pipx if not already installed as this is required to install poetry. These can be installed globally.
+    - Poetry can be installed via other methods, as per the online Poetry documentation guide.
+-	Navigate to the folder '/builder/src/attack_flow_builder'. 
+-	Run ‘npm install’
+    -	Before running this command, ensure that Node.js and npm packages are installed on the system as these are required. 
 
-# Attack Flow
+After completing these steps, the application is set up. To start the application, the following steps must be completed:
+-	Navigate to the ‘/builder’ folder. Run ‘poetry shell’ to enter the virtual environment.
+-	Navigate to the folder ‘/builder/src/attack_flow_builder’. Enter ‘npm run serve’ to start the application. 
+-	The terminal provides the details “App running at: Local: http://localhost:8080.” Enter this into a web browser to use the application. 
 
-Attack Flow is a language for describing how cyber adversaries combine and sequence various offensive
-techniques to achieve their goals. The project helps defenders and leaders understand how adversaries operate
-and improve their own defensive posture. This project is created and maintained by the [MITRE Engenuity Center
-for Threat-Informed Defense](https://ctid.mitre-engenuity.org/) in futherance of our mission to advance the
-start of the art and and the state of the practice in threat-informed defense globally. The project is funded
-by our [research participants](https://ctid.mitre-engenuity.org/our-work/attack-flow/#RESEARCH-PARTICIPANTS).
+### Trouble shooting
+- At the ‘poetry shell’ stage, problems were encountered where the terminal outputted “bash: poetry: command not found.” To resolve this issue, the .bashrc file in the home directory needs to be accessed and modified. From researching the issue, it seems to be a problem that arises with MacBook. The steps taken were as follows:
+- Navigate to the home directory 
+- Open the .bashrc file using ‘nano ~/.bashrc’. Note that if using zsh instead of bash, the .zshrc file needs to be accessed instead using the relevant command. 
+- Enter “export PATH="$HOME/.local/bin:$PATH” into the editor. This line ensures that poetry (or any other programs installed in $HOME/.local/bin) are in the system’s path. 
+- 	Press ‘Ctrl + O’ to save, and ‘Enter’ to confirm. 
+-  Reload the bash file using ‘source ~/.bashrc’.
+-	If the “bash: poetry: command not found” occurs whenever entering the virtual environment, ‘‘source ~/.bashrc’ can be run.
 
-**Table Of Contents:**
+Another issue was encountered when starting the application using ‘npm run serve’. The error received, ‘ERR_OSSL_EVP_UNSUPPORTED’, indicated the newer version of Node.js installed on the system was not compatible. This issue was resolved by running ‘export NODE_OPTIONS=--openssl-legacy-provider’ to enable the legacy openSSL provider. After this, running ‘npm run serve’ had no issues. 
 
-- [Getting Started](#getting-started)
-- [Getting Involved](#getting-involved)
-- [Questions and Feedback](#questions-and-feedback)
-- [How Do I Contribute?](#how-do-i-contribute)
-- [Notice](#notice)
+# MITRE Attack Flow 
 
-## Getting Started
-
-To get started, we suggest skimming the documentation to get familiar with the project. Next, you may want to try creating
-your own attack flows using the Attack Flow Builder, which is an easy-to-use GUI tool. When you are ready to dive deep,
-review the Example Flows and JSON Schema for the language.
-
-| Resource                                                                                    | Description                                            |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| [Documentation](https://center-for-threat-informed-defense.github.io/attack-flow/)          | Complete documentation for the Attack Flow project.    |
-| [Attack Flow Builder](https://center-for-threat-informed-defense.github.io/attack-flow/ui/) | An online GUI tool for building Attack Flows.          |
-| [JSON Schema](/stix/attack-flow-schema-2.0.0.json)                                          | The language specification expressed as a JSON Schema. |
-| [Example Flows](/corpus/)                                                                   | A corpus of example Attack Flows.                      |
-
-## Getting Involved
-
-There are several ways that you can get involved with this project and help
-advance threat-informed defense:
-
-- **Review the language specification, use the builder to create some flows, and tell us what you think.** We
-  welcome your review and feedback on the data model and our methodology.
-- **Help us prioritize additional example flows to create.** Let us know what examples you would like to
-  turned into an Attack Flow. Your input will help us prioritize how we expand our corpus.
-- **Share your use cases.** We are interested in developing additional tools and resources to help the
-  community understand and make threat-informed decisions in their risk management programs. If you have ideas
-  or suggestions, we consider them as we explore additional research projects.
-
-## Questions and Feedback
-
-Please submit issues for any technical questions/concerns or contact ctid@mitre-engenuity.org directly for
-more general inquiries.
-
-Also see the guidance for contributors if are you interested in contributing or simply reporting issues.
-
-## How Do I Contribute?
-
-We welcome your feedback and contributions to help advance Attack Flow. Please see the guidance for
-contributors if are you interested in [contributing or simply reporting issues.](/CONTRIBUTING.md)
-
-Please submit [issues](https://github.com/center-for-threat-informed-defense/attack-flow/issues) for any
-technical questions/concerns or contact ctid@mitre-engenuity.org directly for more general inquiries.
-
-## Notice
-
-Copyright 2021 MITRE Engenuity. Approved for public release. Document number CT0040
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance
-with the License. You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is
-distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See
-the License for the specific language governing permissions and limitations under the License.
-
-This project makes use of MITRE ATT&CK®
-
-[ATT&CK Terms of Use](https://attack.mitre.org/resources/terms-of-use/)
+MITRE Attack Flow is a language for describing how cyber adversaries combine and sequence various offensive
+techniques to achieve their goals. Please visit the MITRE's Attack flow page for information about Attack Flow
+ [MITRE Engenuity Center
+for Threat-Informed Defense](https://ctid.mitre-engenuity.org/).
