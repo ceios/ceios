@@ -1,0 +1,2007 @@
+{
+  "type": "bundle",
+  "id": "bundle--e9473690-5eed-49d6-8d52-e8648a8c7648",
+  "spec_version": "2.1",
+  "created": "2025-04-01T05:40:52.185Z",
+  "modified": "2025-04-01T05:40:52.185Z",
+  "objects": [
+    {
+      "type": "extension-definition",
+      "id": "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "spec_version": "2.1",
+      "created": "2022-08-02T19:34:35.143Z",
+      "modified": "2022-08-02T19:34:35.143Z",
+      "name": "Attack Flow",
+      "description": "Extends STIX 2.1 with features to create Attack Flows.",
+      "created_by_ref": "identity--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "schema": "https://center-for-threat-informed-defense.github.io/attack-flow/stix/attack-flow-schema-2.0.0.json",
+      "version": "2.0.0",
+      "extension_types": [
+        "new-sdo"
+      ],
+      "external_references": [
+        {
+          "source_name": "Documentation",
+          "description": "Documentation for Attack Flow",
+          "url": "https://center-for-threat-informed-defense.github.io/attack-flow"
+        },
+        {
+          "source_name": "GitHub",
+          "description": "Source code repository for Attack Flow",
+          "url": "https://github.com/center-for-threat-informed-defense/attack-flow"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "id": "identity--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "spec_version": "2.1",
+      "created": "2022-08-02T19:34:35.143Z",
+      "modified": "2022-08-02T19:34:35.143Z",
+      "created_by_ref": "identity--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "name": "MITRE Engenuity Center for Threat-Informed Defense",
+      "identity_class": "organization"
+    },
+    {
+      "type": "attack-flow",
+      "id": "attack-flow--aa13f359-e745-41a0-b200-bf30de63253d",
+      "spec_version": "2.1",
+      "created": "2024-06-24T15:08:11.074Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "created_by_ref": "identity--e6ede67b-06d0-420e-a235-181de9ee0a60",
+      "start_refs": [
+        "attack-action--5a44def7-ece0-4976-b867-4edc84ef3339",
+        "attack-action--3d2e0a02-6ae3-4c37-8a4b-08c8a8214cf3",
+        "attack-action--9fbadfc8-0b53-4014-a7a6-75d24821a24c",
+        "attack-action--c7eeeec4-d878-4909-8dae-e1ff6079c37e",
+        "attack-action--6a64e24c-9664-4e29-ae9e-2c8ef9d11ddd",
+        "attack-action--d56e2d8e-287a-4b2e-9858-2754f9821c04",
+        "attack-action--88ace0b4-cf13-4588-abba-121d43115451",
+        "attack-action--b61ef80c-6fdd-4314-841d-54d5b3065f74",
+        "attack-action--ee44723d-dd4b-4828-8c1d-af0ada2b25ba",
+        "attack-action--95e83f14-73c0-4c44-af96-679c890b7ad0",
+        "attack-action--64a0d565-8181-4541-bde5-2d4f239fc074",
+        "attack-action--be286e51-48ab-4e40-9834-09c3d916ceac",
+        "attack-action--c59dcee5-f8d9-4a26-9397-41c09c27aa46",
+        "attack-action--15f7d840-5f5c-491b-9296-06447c128fe9"
+      ],
+      "name": "GRU & IRA 2016 Election Campaign",
+      "description": "During the 2016 United States elections, Russian interference through the GRU and IRA aimed to sabotage the presidential campaign of Hillary Clinton and increase support for Donald Trump's presidential campaign while amplifying social and political discord in the U.S.\nThe model includes the IRA's FaceMusic malware at a high level to demonstrate where these operations overlap. Please refer to the database for a complete model of the FaceMusic malware operation.",
+      "scope": "incident"
+    },
+    {
+      "type": "identity",
+      "id": "identity--e6ede67b-06d0-420e-a235-181de9ee0a60",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.185Z",
+      "modified": "2025-04-01T05:40:52.185Z",
+      "name": "Jim Morris"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--bf852db6-da70-48c6-a641-f0579cf3da07",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Search Open Websites/Domains: Social Media",
+      "tactic_id": "TA0043",
+      "tactic_ref": "x-mitre-tactic--daa4cbb1-b4f4-4723-a824-7f1efd6e0592",
+      "technique_id": "T1593.001",
+      "technique_ref": "attack-pattern--bbe5b322-e2af-4a5e-9625-a4e62bf84ed3",
+      "effect_refs": [
+        "attack-operator--b3053445-9311-4780-99dd-688cf59a71d3"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--5a44def7-ece0-4976-b867-4edc84ef3339",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Acquire Infrastructure: Domains",
+      "tactic_id": "TA0042",
+      "tactic_ref": "x-mitre-tactic--d679bca2-e57d-4935-8650-8031c87a4400",
+      "technique_id": "T1583.001",
+      "technique_ref": "attack-pattern--40f5caa0-4cb7-4117-89fc-d421bb493df3",
+      "effect_refs": [
+        "attack-action--5164d617-5e01-4587-b0aa-e6c42e6ff78f",
+        "attack-action--608d50a9-fc27-4f5e-b2b3-17855e0cd966",
+        "attack-operator--89033915-6ead-453e-81d7-190231a0224a"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--3d2e0a02-6ae3-4c37-8a4b-08c8a8214cf3",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Acquire Infrastructure: Server",
+      "tactic_id": "TA0042",
+      "tactic_ref": "x-mitre-tactic--d679bca2-e57d-4935-8650-8031c87a4400",
+      "technique_id": "T1583.004",
+      "technique_ref": "attack-pattern--60c4b628-4807-4b0b-bbf5-fdac8643c337",
+      "effect_refs": [
+        "attack-action--922d4261-9f1f-4478-a6b7-7f8c00434dac",
+        "attack-operator--89033915-6ead-453e-81d7-190231a0224a"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--9fbadfc8-0b53-4014-a7a6-75d24821a24c",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Acquire Infrastructure: Virtual Private Server",
+      "tactic_id": "TA0042",
+      "tactic_ref": "x-mitre-tactic--d679bca2-e57d-4935-8650-8031c87a4400",
+      "technique_id": "T1583.003",
+      "technique_ref": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795",
+      "effect_refs": [
+        "attack-action--5164d617-5e01-4587-b0aa-e6c42e6ff78f",
+        "attack-action--aa3541b8-5e25-4743-a9f7-52fbbfc465e2",
+        "attack-operator--89033915-6ead-453e-81d7-190231a0224a"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--aa3541b8-5e25-4743-a9f7-52fbbfc465e2",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Establish Accounts: Social Media Accounts",
+      "tactic_id": "TA0042",
+      "tactic_ref": "x-mitre-tactic--d679bca2-e57d-4935-8650-8031c87a4400",
+      "technique_id": "T1585.001",
+      "technique_ref": "attack-pattern--b1ccd744-3f78-4a0e-9bb2-2002057f7928",
+      "description": "- Social media accounts such as DCLeaks on Facebook and @dcleaks_ on twitter were used to support operations.\n- IRA-operated social media account \"Stop All Invaders\" account used to promote FaceMusic malware.",
+      "effect_refs": [
+        "attack-action--f9e8452c-fb5e-4d31-8bf6-c8795955a757",
+        "attack-operator--de56ebab-565f-4617-8f85-0326ae690e83",
+        "attack-action--145bd434-b8f7-45b6-b299-25e7a9524fed"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--c7eeeec4-d878-4909-8dae-e1ff6079c37e",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Develop Capabilities: Malware",
+      "tactic_id": "TA0042",
+      "tactic_ref": "x-mitre-tactic--d679bca2-e57d-4935-8650-8031c87a4400",
+      "technique_id": "T1587.001",
+      "technique_ref": "attack-pattern--212306d8-efa4-44c9-8c2d-ed3d2e224aa0",
+      "description": "- GRU developed X-Agent malware, which was implanted on computers during the hacking of the DCCC and DNC networks. \n- FaceMusic developed by IRA.",
+      "effect_refs": [
+        "attack-action--6fc41abf-e6bf-4327-9a34-3cc2c8e4a76c"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--6fc41abf-e6bf-4327-9a34-3cc2c8e4a76c",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Stage Capabilities: Upload Malware",
+      "tactic_id": "TA0042",
+      "tactic_ref": "x-mitre-tactic--d679bca2-e57d-4935-8650-8031c87a4400",
+      "technique_id": "T1608.001",
+      "technique_ref": "attack-pattern--3ee16395-03f0-4690-a32e-69ce9ada0f9e",
+      "effect_refs": [
+        "attack-action--92cc3f0a-1913-4997-990b-5c1fa2592e12",
+        "attack-action--83e6a34c-08d1-41eb-a924-9396c768e907",
+        "attack-action--bc13251c-5c87-4a4c-8a14-ad37d90800ac",
+        "attack-action--abaeaa31-c4f5-43fd-8d9a-cbed4ed96a0c",
+        "attack-action--c5dc66d1-4aea-471e-8506-243804ac0a22",
+        "attack-action--da21a2aa-c904-4e10-be0d-b801d24b4ad0",
+        "attack-action--65e9b67c-3da8-4009-8c8b-8f7b05b23a76",
+        "attack-action--2a465fc6-a85e-41e7-9f08-04e1174b1319",
+        "attack-action--0bbd64c0-d6aa-41bc-a13e-a5c267c76521",
+        "attack-action--96cbcf0d-4567-4eb5-8cf1-d5d43bb06349",
+        "attack-action--145bd434-b8f7-45b6-b299-25e7a9524fed"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--49ba01af-094a-4d3d-955b-fe8e243fb416",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Determine Target Audiences",
+      "tactic_id": "TA01",
+      "tactic_ref": "x-mitre-tactic--b03163eb-7e81-4fed-9819-641bf7c99507",
+      "technique_id": "T0073",
+      "technique_ref": "attack-pattern--6faf71ca-1e32-4134-8a7c-79b25f7f3615",
+      "effect_refs": [
+        "attack-action--4a928ea6-8165-4a99-8f9f-72c7ea3247b8",
+        "attack-action--f56767fb-24d7-4898-ad56-e1e1d4e0c858",
+        "attack-action--e1fb2e41-ddf2-4dd3-8556-44cce82192f2",
+        "attack-action--bf852db6-da70-48c6-a641-f0579cf3da07"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--b80fa8a2-9588-4fcc-8100-36b377bb9e00",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Divide",
+      "tactic_id": "TA02",
+      "tactic_ref": "x-mitre-tactic--431af018-56ae-406c-9648-4857f074fffc",
+      "technique_id": "T0079",
+      "technique_ref": "attack-pattern--1d48fe65-5062-4262-b9e2-890aca1da132",
+      "effect_refs": [
+        "attack-operator--95fe5427-2805-4d58-a790-1be9b17a55ca"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--4a928ea6-8165-4a99-8f9f-72c7ea3247b8",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Determine Strategic Ends",
+      "tactic_id": "TA01",
+      "tactic_ref": "x-mitre-tactic--b03163eb-7e81-4fed-9819-641bf7c99507",
+      "technique_id": "T0074",
+      "technique_ref": "attack-pattern--bef6392b-f5a2-4a40-8b53-9a9377bea159",
+      "effect_refs": [
+        "attack-action--49ba01af-094a-4d3d-955b-fe8e243fb416",
+        "attack-action--dd155896-be40-4941-9a35-aca3d93495f0",
+        "attack-action--b80fa8a2-9588-4fcc-8100-36b377bb9e00",
+        "attack-action--6fccf75b-486f-4685-9f40-d5ec3a1acefd",
+        "attack-action--14f2d4a6-49b8-4744-bf9a-470cc84b28f4",
+        "attack-action--2554d139-71c2-40fd-9e03-f7c789e4c82c",
+        "attack-action--2b0d60d5-24ab-477e-a886-a060485e01cc",
+        "attack-action--e872977a-4f65-4035-b283-78e23e46ffcb",
+        "attack-action--992e1318-4e93-4e8f-85e4-a54076e2f6f9",
+        "attack-action--808b0b0a-01a3-454c-9504-668ca1c4b564",
+        "attack-action--5726d5a6-4d06-4ef5-97ba-90540d0ec14e",
+        "attack-action--670d7f28-16f1-408f-b2a6-084d6a45df59"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--670d7f28-16f1-408f-b2a6-084d6a45df59",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Infiltrate Existing Networks: Identify Susceptible Targets in Networks",
+      "tactic_id": "TA15",
+      "tactic_ref": "x-mitre-tactic--c4eaa2a6-7e86-4eb3-beaa-981a96d4724a",
+      "technique_id": "T0094.001",
+      "technique_ref": "attack-pattern--4cb308a9-073c-49d3-81ed-894cf9b95acc",
+      "effect_refs": [
+        "attack-action--990b9424-4063-4380-bd43-1b4af6a4ed5b"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--38e6b9f6-c3b9-4c5d-9c70-e811148960a0",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Create Inauthentic Social Media Pages and Groups",
+      "tactic_id": "TA15",
+      "tactic_ref": "x-mitre-tactic--c4eaa2a6-7e86-4eb3-beaa-981a96d4724a",
+      "technique_id": "T0007",
+      "technique_ref": "attack-pattern--d1ad0738-1f52-4fab-b0d1-640b551d7f6a",
+      "effect_refs": [
+        "attack-operator--4cdbd5ed-f8dd-42fa-adc0-63513e4e87e4",
+        "attack-operator--de56ebab-565f-4617-8f85-0326ae690e83"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--a691b9b9-0fbd-4987-ab37-850ef7c58963",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Generate Information Pollution",
+      "tactic_id": "TA06",
+      "tactic_ref": "x-mitre-tactic--82039146-59a3-4353-b328-a422da34db6b",
+      "technique_id": "T0019",
+      "technique_ref": "attack-pattern--09d17df9-9bb5-4d64-ba5c-8ae47814bd4c",
+      "effect_refs": [
+        "attack-action--f9e8452c-fb5e-4d31-8bf6-c8795955a757",
+        "attack-action--20892e34-23c4-4c37-ba25-339c3106e5c4"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--dd155896-be40-4941-9a35-aca3d93495f0",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Segment Audiences: Political Segmentation",
+      "tactic_id": "TA13",
+      "tactic_ref": "x-mitre-tactic--1e005da9-56cc-4802-af90-b267d17a1ad1",
+      "technique_id": "T0072.005",
+      "technique_ref": "attack-pattern--a468ff54-27eb-4e6d-b709-a9830017df86",
+      "effect_refs": [
+        "attack-operator--95fe5427-2805-4d58-a790-1be9b17a55ca"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--992e1318-4e93-4e8f-85e4-a54076e2f6f9",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Identify Social and Technical Vulnerabilities: Identify Existing Fissures",
+      "tactic_id": "TA13",
+      "tactic_ref": "x-mitre-tactic--1e005da9-56cc-4802-af90-b267d17a1ad1",
+      "technique_id": "T0081.004",
+      "technique_ref": "attack-pattern--d13ff5af-16fd-4b32-8e14-f2e0980c15fb",
+      "effect_refs": [
+        "attack-operator--95fe5427-2805-4d58-a790-1be9b17a55ca"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--e872977a-4f65-4035-b283-78e23e46ffcb",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Identify Social and Technical Vulnerabilities: Identify Existing Conspiracy Narratives/Suspicions",
+      "tactic_id": "TA13",
+      "tactic_ref": "x-mitre-tactic--1e005da9-56cc-4802-af90-b267d17a1ad1",
+      "technique_id": "T0081.005",
+      "technique_ref": "attack-pattern--625fe1a6-ee9d-45c8-9912-9e9f6e87dc85",
+      "effect_refs": [
+        "attack-operator--95fe5427-2805-4d58-a790-1be9b17a55ca"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--2b0d60d5-24ab-477e-a886-a060485e01cc",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Identify Social and Technical Vulnerabilities: Identify Wedge Issues",
+      "tactic_id": "TA13",
+      "tactic_ref": "x-mitre-tactic--1e005da9-56cc-4802-af90-b267d17a1ad1",
+      "technique_id": "T0081.006",
+      "technique_ref": "attack-pattern--594993b4-86a3-455b-af59-61f167d7fd93",
+      "effect_refs": [
+        "attack-operator--95fe5427-2805-4d58-a790-1be9b17a55ca"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--2554d139-71c2-40fd-9e03-f7c789e4c82c",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Identify Social and Technical Vulnerabilities: Identify Media System Vulnerabilities",
+      "tactic_id": "TA13",
+      "tactic_ref": "x-mitre-tactic--1e005da9-56cc-4802-af90-b267d17a1ad1",
+      "technique_id": "T0081.008",
+      "technique_ref": "attack-pattern--bb8da71f-108a-4c46-a1ef-d24ef1c8a661",
+      "effect_refs": [
+        "attack-operator--95fe5427-2805-4d58-a790-1be9b17a55ca"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--8578d49e-3b36-4ae8-b370-8999d1f27ee8",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Respond to Breaking News Event or Active Crisis",
+      "tactic_id": "TA14",
+      "tactic_ref": "x-mitre-tactic--fd1e7dd3-63d0-4040-808e-3e61b9ddca86",
+      "technique_id": "T0068",
+      "technique_ref": "attack-pattern--b2a7561a-28ad-426c-a249-f415b5f11cee",
+      "effect_refs": [
+        "attack-operator--b629c3c1-5dbd-4745-99a9-89c8c96f3cb7"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--9cdc6539-f4f9-40fd-944c-2a0fec470859",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Integrate Target Audience Vulnerabilities into Narrative",
+      "tactic_id": "TA14",
+      "tactic_ref": "x-mitre-tactic--fd1e7dd3-63d0-4040-808e-3e61b9ddca86",
+      "technique_id": "T0083",
+      "technique_ref": "attack-pattern--c254c765-c83d-4ae3-880e-7a253ef02d37",
+      "effect_refs": [
+        "attack-operator--b629c3c1-5dbd-4745-99a9-89c8c96f3cb7"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--6faf9825-64af-49a1-9cd8-2c0173dd5129",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Obtain Private Documents: Obtain Authentic Documents",
+      "tactic_id": "TA06",
+      "tactic_ref": "x-mitre-tactic--82039146-59a3-4353-b328-a422da34db6b",
+      "technique_id": "T0089.001",
+      "technique_ref": "attack-pattern--ec8424e6-c7de-4543-b943-f0c4cc9ac63d",
+      "effect_refs": [
+        "attack-operator--4cdbd5ed-f8dd-42fa-adc0-63513e4e87e4",
+        "attack-action--a691b9b9-0fbd-4987-ab37-850ef7c58963"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--6a64e24c-9664-4e29-ae9e-2c8ef9d11ddd",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Cultivate Ignorant Agents",
+      "tactic_id": "TA15",
+      "tactic_ref": "x-mitre-tactic--c4eaa2a6-7e86-4eb3-beaa-981a96d4724a",
+      "technique_id": "T0010",
+      "technique_ref": "attack-pattern--bacbdfd3-f8c2-4126-a9f3-1b75576fa5e7",
+      "effect_refs": [
+        "attack-action--990b9424-4063-4380-bd43-1b4af6a4ed5b",
+        "attack-operator--f3659d95-ddca-4474-9e95-2744f3ce46a1"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--45837119-ac91-4811-936d-ab3cf8608a46",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Create Inauthentic Accounts: Create Bot Accounts",
+      "tactic_id": "TA15",
+      "tactic_ref": "x-mitre-tactic--c4eaa2a6-7e86-4eb3-beaa-981a96d4724a",
+      "technique_id": "T0090.003",
+      "technique_ref": "attack-pattern--b2695cde-5f12-4e6a-b55a-e31220cb4bd7",
+      "effect_refs": [
+        "attack-operator--4cdbd5ed-f8dd-42fa-adc0-63513e4e87e4",
+        "attack-operator--de56ebab-565f-4617-8f85-0326ae690e83"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--d56e2d8e-287a-4b2e-9858-2754f9821c04",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Create Inauthentic Accounts: Create Sockpuppet Accounts",
+      "tactic_id": "TA15",
+      "tactic_ref": "x-mitre-tactic--c4eaa2a6-7e86-4eb3-beaa-981a96d4724a",
+      "technique_id": "T0090.004",
+      "technique_ref": "attack-pattern--81abb4fa-705e-430f-ba54-34bf7bd467f7",
+      "effect_refs": [
+        "attack-operator--4cdbd5ed-f8dd-42fa-adc0-63513e4e87e4",
+        "attack-operator--de56ebab-565f-4617-8f85-0326ae690e83"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--88ace0b4-cf13-4588-abba-121d43115451",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Acquire/Recruit Network: Fund Proxies",
+      "tactic_id": "TA15",
+      "tactic_ref": "x-mitre-tactic--c4eaa2a6-7e86-4eb3-beaa-981a96d4724a",
+      "technique_id": "T0093.001",
+      "technique_ref": "attack-pattern--d522f417-ba0e-4e2d-ae96-df2c1fd607e6",
+      "effect_refs": [
+        "attack-action--990b9424-4063-4380-bd43-1b4af6a4ed5b",
+        "attack-operator--f3659d95-ddca-4474-9e95-2744f3ce46a1"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--863d942a-86f8-4159-8496-dc4a2b8cd8d7",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Post Content: Share Memes",
+      "tactic_id": "TA09",
+      "tactic_ref": "x-mitre-tactic--4a9c3d11-801b-4ee9-a5bc-b5bc042a92f9",
+      "technique_id": "T0115.001",
+      "technique_ref": "attack-pattern--9a5261b8-5051-47ed-a4f6-bdbb7b6edcb4"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--1025a1a0-b803-4e63-a68c-d35df57bdc2c",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Flooding the Information Space: Trolls Amplify and Manipulate",
+      "tactic_id": "TA17",
+      "tactic_ref": "x-mitre-tactic--c198a2b6-0c46-4b69-866a-1764782c2e07",
+      "technique_id": "T0049.001",
+      "technique_ref": "attack-pattern--1c13465b-8b75-4b7d-a763-fe5b1d091635",
+      "effect_refs": [
+        "attack-action--c627c849-7523-485e-8535-71c72c8cf11f"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--f85b9a71-b813-4590-8d1f-921d657b7741",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Flooding the Information Space: Utilize Spamoflauge",
+      "tactic_id": "TA17",
+      "tactic_ref": "x-mitre-tactic--c198a2b6-0c46-4b69-866a-1764782c2e07",
+      "technique_id": "T0049.004",
+      "technique_ref": "attack-pattern--4282febe-c8a6-46da-863c-f19081615d80"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--7a30ae19-4160-4c07-976a-1a25b5df68e4",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Organize Events",
+      "tactic_id": "TA10",
+      "tactic_ref": "x-mitre-tactic--3fa1ad18-ca09-40ed-be45-f210b9c07e0b",
+      "technique_id": "T0057",
+      "technique_ref": "attack-pattern--0102376a-e896-4191-b3fb-e58188301822",
+      "effect_refs": [
+        "attack-action--53f73924-4101-414b-a791-25ea8b76a05a"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--53f73924-4101-414b-a791-25ea8b76a05a",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Encourage Attendance at Events",
+      "tactic_id": "TA10",
+      "tactic_ref": "x-mitre-tactic--3fa1ad18-ca09-40ed-be45-f210b9c07e0b",
+      "technique_id": "T0126",
+      "technique_ref": "attack-pattern--0a77a75a-09e7-44bf-927c-5e66a138862b",
+      "effect_refs": [
+        "attack-action--9af0ebc0-f3db-47d8-8a29-a252501cecf5",
+        "attack-action--b3660bc5-2ece-4823-9d4d-36d421a165e3",
+        "attack-action--b547e639-08ab-4d69-a1b1-8bbd4f955173",
+        "attack-action--9be12131-f231-45c0-80e5-8531c9f359b3",
+        "attack-action--46a31514-5431-41cb-8931-b37dcb4fe12b",
+        "attack-action--abb59dba-0d4d-4da1-bea8-8456e03daf6f"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--74a81798-f985-4f77-aeb7-07287a0bb306",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Conceal Infrastructure: Use Cryptocurrency",
+      "tactic_id": "TA11",
+      "tactic_ref": "x-mitre-tactic--dffcf337-d4d9-449b-aa9c-6a97a891c5a9",
+      "technique_id": "T0130.004",
+      "technique_ref": "attack-pattern--c80ef7af-3f51-4be5-b42a-19d29ab40a53"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--b547e639-08ab-4d69-a1b1-8bbd4f955173",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Measure Performance: People Focused",
+      "tactic_id": "TA12",
+      "tactic_ref": "x-mitre-tactic--19886784-0e07-474f-803c-30c443e65347",
+      "technique_id": "T0132.001",
+      "technique_ref": "attack-pattern--83b4e2db-265f-4f88-9b35-26df05c561e9"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--b3660bc5-2ece-4823-9d4d-36d421a165e3",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Measure Effectiveness: Behaviour Changes",
+      "tactic_id": "TA12",
+      "tactic_ref": "x-mitre-tactic--19886784-0e07-474f-803c-30c443e65347",
+      "technique_id": "T0133.001",
+      "technique_ref": "attack-pattern--a925711a-dbfb-41b1-bd81-70d41dbaa69c"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--9be12131-f231-45c0-80e5-8531c9f359b3",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Measure Effectiveness: Awareness",
+      "tactic_id": "TA12",
+      "tactic_ref": "x-mitre-tactic--19886784-0e07-474f-803c-30c443e65347",
+      "technique_id": "T0133.003",
+      "technique_ref": "attack-pattern--55ecf54e-0e46-4ea1-86de-ab473c94705f"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--0cc3905a-a950-43fc-94df-760717e542aa",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Measure Effectiveness: Knowledge",
+      "tactic_id": "TA12",
+      "tactic_ref": "x-mitre-tactic--19886784-0e07-474f-803c-30c443e65347",
+      "technique_id": "T0133.004",
+      "technique_ref": "attack-pattern--7fdc6b19-0d37-43a9-8144-f0c180a13ed0"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--9af0ebc0-f3db-47d8-8a29-a252501cecf5",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Measure Effectiveness: Action/attitude",
+      "tactic_id": "TA12",
+      "tactic_ref": "x-mitre-tactic--19886784-0e07-474f-803c-30c443e65347",
+      "technique_id": "T0133.005",
+      "technique_ref": "attack-pattern--1ae9162c-ea88-4123-9c3f-b651eff4a77c"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--abb59dba-0d4d-4da1-bea8-8456e03daf6f",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Measure Effectiveness Indicators (or KPIs): Message Reach",
+      "tactic_id": "TA12",
+      "tactic_ref": "x-mitre-tactic--19886784-0e07-474f-803c-30c443e65347",
+      "technique_id": "T0134.001",
+      "technique_ref": "attack-pattern--4c5e704a-acca-4bbd-8980-c915c0424ff8"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--46a31514-5431-41cb-8931-b37dcb4fe12b",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Measure Effectiveness Indicators (or KPIs): Social Media Engagement",
+      "tactic_id": "TA12",
+      "tactic_ref": "x-mitre-tactic--19886784-0e07-474f-803c-30c443e65347",
+      "technique_id": "T0134.002",
+      "technique_ref": "attack-pattern--4c5e704a-acca-4bbd-8980-c915c0424ff8"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--62ca4f3e-e6a2-4b3d-821d-cfe705a7d39c",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Attract Traditional Media",
+      "tactic_id": "TA09",
+      "tactic_ref": "x-mitre-tactic--4a9c3d11-801b-4ee9-a5bc-b5bc042a92f9",
+      "technique_id": "T0117",
+      "technique_ref": "attack-pattern--72df7e55-dc60-4a7e-9928-ed41ac0e1581",
+      "effect_refs": [
+        "attack-action--a37ef0fc-7f2e-4b4b-9f58-f34507aa0e03"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--54075682-f0bb-4575-9bc5-36375bb226e7",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Gather Victim Host Information",
+      "tactic_id": "TA0043",
+      "tactic_ref": "x-mitre-tactic--daa4cbb1-b4f4-4723-a824-7f1efd6e0592",
+      "technique_id": "T1592",
+      "technique_ref": "attack-pattern--09312b1a-c3c6-4b45-9844-3ccc78e5d82f",
+      "effect_refs": [
+        "attack-operator--7d102869-e109-4eaf-9748-610003360754"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--c0a26220-7f40-4291-b6b2-858b87b56304",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Gather Victim Identity Information: Credentials",
+      "tactic_id": "TA0043",
+      "tactic_ref": "x-mitre-tactic--daa4cbb1-b4f4-4723-a824-7f1efd6e0592",
+      "technique_id": "T1589.001",
+      "technique_ref": "attack-pattern--bc76d0a4-db11-4551-9ac4-01a469cfb161",
+      "effect_refs": [
+        "attack-operator--7d102869-e109-4eaf-9748-610003360754"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--14a41984-64dd-493d-8074-b7171f219297",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Gather Victim Identity Information: Email Addresses",
+      "tactic_id": "TA0043",
+      "tactic_ref": "x-mitre-tactic--daa4cbb1-b4f4-4723-a824-7f1efd6e0592",
+      "technique_id": "T1589.002",
+      "technique_ref": "attack-pattern--69f897fd-12a9-4c89-ad6a-46d2f3c38262",
+      "effect_refs": [
+        "attack-operator--7d102869-e109-4eaf-9748-610003360754"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--016938e9-5a4f-4ba0-b01a-a23cf0ca0134",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Gather Victim Identity Information: Employee Names",
+      "tactic_id": "TA0043",
+      "tactic_ref": "x-mitre-tactic--daa4cbb1-b4f4-4723-a824-7f1efd6e0592",
+      "technique_id": "T1589.003",
+      "technique_ref": "attack-pattern--76551c52-b111-4884-bc47-ff3e728f0156",
+      "effect_refs": [
+        "attack-operator--7d102869-e109-4eaf-9748-610003360754"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--a8bf9731-1f6d-4ce1-bdbb-6a13ea7ed3cf",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Gather Victim Network Information: Network Topology",
+      "tactic_id": "TA0043",
+      "tactic_ref": "x-mitre-tactic--daa4cbb1-b4f4-4723-a824-7f1efd6e0592",
+      "technique_id": "T1590.004",
+      "technique_ref": "attack-pattern--34ab90a3-05f6-4259-8f21-621081fdaba5",
+      "effect_refs": [
+        "attack-action--6fc41abf-e6bf-4327-9a34-3cc2c8e4a76c"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--f56767fb-24d7-4898-ad56-e1e1d4e0c858",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Search Open Websites/Domains: Search Engines",
+      "tactic_id": "TA0043",
+      "tactic_ref": "x-mitre-tactic--daa4cbb1-b4f4-4723-a824-7f1efd6e0592",
+      "technique_id": "T1593.002",
+      "technique_ref": "attack-pattern--6e561441-8431-4773-a9b8-ccf28ef6a968",
+      "effect_refs": [
+        "attack-operator--b3053445-9311-4780-99dd-688cf59a71d3"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--e1fb2e41-ddf2-4dd3-8556-44cce82192f2",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Search Victim-Owned Websites",
+      "tactic_id": "TA0043",
+      "tactic_ref": "x-mitre-tactic--daa4cbb1-b4f4-4723-a824-7f1efd6e0592",
+      "technique_id": "T1594",
+      "technique_ref": "attack-pattern--16cdd21f-da65-4e4f-bc04-dd7d198c7b26",
+      "effect_refs": [
+        "attack-operator--b3053445-9311-4780-99dd-688cf59a71d3"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--b61ef80c-6fdd-4314-841d-54d5b3065f74",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Acquire Infrastructure: Botnet",
+      "tactic_id": "TA0042",
+      "tactic_ref": "x-mitre-tactic--d679bca2-e57d-4935-8650-8031c87a4400",
+      "technique_id": "T1583.005",
+      "technique_ref": "attack-pattern--31225cd3-cd46-4575-b287-c2c14011c074",
+      "effect_refs": [
+        "attack-action--45837119-ac91-4811-936d-ab3cf8608a46",
+        "attack-action--74a81798-f985-4f77-aeb7-07287a0bb306"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--290e3a52-c216-4017-86f2-f469721e82be",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Compromise Accounts: Email Accounts",
+      "tactic_id": "TA0042",
+      "tactic_ref": "x-mitre-tactic--d679bca2-e57d-4935-8650-8031c87a4400",
+      "technique_id": "T1586.002",
+      "technique_ref": "attack-pattern--3dc8c101-d4db-4f4d-8150-1b5a76ca5f1b",
+      "effect_refs": [
+        "attack-action--ca623971-20e8-4db3-9fca-637f89e47eee",
+        "attack-operator--0faab550-3716-4b96-85fd-36d9c6ef9452"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--608d50a9-fc27-4f5e-b2b3-17855e0cd966",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Establish Accounts: Email Accounts",
+      "tactic_id": "TA0042",
+      "tactic_ref": "x-mitre-tactic--d679bca2-e57d-4935-8650-8031c87a4400",
+      "technique_id": "T1585.002",
+      "technique_ref": "attack-pattern--65013dd2-bc61-43e3-afb5-a14c4fa7437a",
+      "effect_refs": [
+        "attack-action--5164d617-5e01-4587-b0aa-e6c42e6ff78f"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--5164d617-5e01-4587-b0aa-e6c42e6ff78f",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Phishing: Spearphishing Link",
+      "tactic_id": "TA0001",
+      "tactic_ref": "x-mitre-tactic--ffd5bcee-6e16-4dd2-8eca-7b3beedf33ca",
+      "technique_id": "T1566.002",
+      "technique_ref": "attack-pattern--2b742742-28c3-4e1b-bab7-8350d6300fa7",
+      "effect_refs": [
+        "attack-action--290e3a52-c216-4017-86f2-f469721e82be"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--ca623971-20e8-4db3-9fca-637f89e47eee",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Valid Accounts",
+      "tactic_id": "TA0001",
+      "tactic_ref": "x-mitre-tactic--ffd5bcee-6e16-4dd2-8eca-7b3beedf33ca",
+      "technique_id": "T1078",
+      "technique_ref": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+      "effect_refs": [
+        "attack-operator--0faab550-3716-4b96-85fd-36d9c6ef9452"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--2a465fc6-a85e-41e7-9f08-04e1174b1319",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Indicator Removal: Clear Windows Event Logs",
+      "tactic_id": "TA0005",
+      "tactic_ref": "x-mitre-tactic--78b23412-0651-46d7-a540-170a1ce8bd5a",
+      "technique_id": "T1070.001",
+      "technique_ref": "attack-pattern--6495ae23-3ab4-43c5-a94f-5638a2c31fd2"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--65e9b67c-3da8-4009-8c8b-8f7b05b23a76",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Indicator Removal: Clear Linux or Mac System Logs",
+      "tactic_id": "TA0005",
+      "tactic_ref": "x-mitre-tactic--78b23412-0651-46d7-a540-170a1ce8bd5a",
+      "technique_id": "T1070.002",
+      "technique_ref": "attack-pattern--2bce5b30-7014-4a5d-ade7-12913fe6ac36"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--bda94174-e119-4713-8b7f-881143c01de1",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Indicator Removal: File Deletion",
+      "tactic_id": "TA0005",
+      "tactic_ref": "x-mitre-tactic--78b23412-0651-46d7-a540-170a1ce8bd5a",
+      "technique_id": "T1070.004",
+      "technique_ref": "attack-pattern--d63a3fb8-9452-4e9d-a60a-54be68d5998c"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--bc13251c-5c87-4a4c-8a14-ad37d90800ac",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Obfuscated Files or Information: Binary Padding",
+      "tactic_id": "TA0005",
+      "tactic_ref": "x-mitre-tactic--78b23412-0651-46d7-a540-170a1ce8bd5a",
+      "technique_id": "T1027.001",
+      "technique_ref": "attack-pattern--5bfccc3f-2326-4112-86cc-c1ece9d8a2b5"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--abaeaa31-c4f5-43fd-8d9a-cbed4ed96a0c",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Unsecured Credentials: Credentials In Files",
+      "tactic_id": "TA0006",
+      "tactic_ref": "x-mitre-tactic--2558fd61-8c75-4730-94c4-11926db2a263",
+      "technique_id": "T1552.001",
+      "technique_ref": "attack-pattern--837f9164-50af-4ac0-8219-379d8a74cefc",
+      "effect_refs": [
+        "attack-operator--50df08e0-3795-40dd-88b8-f3944322ba11"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--92cc3f0a-1913-4997-990b-5c1fa2592e12",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "File and Directory Discovery",
+      "tactic_id": "TA0007",
+      "tactic_ref": "x-mitre-tactic--c17c5845-175e-4421-9713-829d0573dbc9",
+      "technique_id": "T1083",
+      "technique_ref": "attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18",
+      "effect_refs": [
+        "attack-action--0bbd64c0-d6aa-41bc-a13e-a5c267c76521"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--9f0c080c-af8a-49e0-afed-4ca7ad942df7",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Archive Collected Data",
+      "tactic_id": "TA0009",
+      "tactic_ref": "x-mitre-tactic--d108ce10-2419-4cf9-a774-46161d6c6cfe",
+      "technique_id": "T1560",
+      "technique_ref": "attack-pattern--53ac20cd-aca3-406e-9aa0-9fc7fdc60a5a",
+      "effect_refs": [
+        "attack-action--0bbd64c0-d6aa-41bc-a13e-a5c267c76521"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--c5dc66d1-4aea-471e-8506-243804ac0a22",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Input Capture: Keylogging",
+      "tactic_id": "TA0009",
+      "tactic_ref": "x-mitre-tactic--d108ce10-2419-4cf9-a774-46161d6c6cfe",
+      "technique_id": "T1056.001",
+      "technique_ref": "attack-pattern--09a60ea3-a8d1-4ae5-976e-5783248b72a4",
+      "effect_refs": [
+        "attack-operator--50df08e0-3795-40dd-88b8-f3944322ba11"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--da21a2aa-c904-4e10-be0d-b801d24b4ad0",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Screen Capture",
+      "tactic_id": "TA0009",
+      "tactic_ref": "x-mitre-tactic--d108ce10-2419-4cf9-a774-46161d6c6cfe",
+      "technique_id": "T1113",
+      "technique_ref": "attack-pattern--0259baeb-9f63-4c69-bf10-eb038c390688",
+      "effect_refs": [
+        "attack-operator--50df08e0-3795-40dd-88b8-f3944322ba11"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--83e6a34c-08d1-41eb-a924-9396c768e907",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Data Obfuscation: Junk Data",
+      "tactic_id": "TA0011",
+      "tactic_ref": "x-mitre-tactic--f72804c5-f15a-449e-a5da-2eecd181f813",
+      "technique_id": "T1001.001",
+      "technique_ref": "attack-pattern--f7c0689c-4dbd-489b-81be-7cb7c7079ade"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--922d4261-9f1f-4478-a6b7-7f8c00434dac",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Proxy: External Proxy",
+      "tactic_id": "TA0011",
+      "tactic_ref": "x-mitre-tactic--f72804c5-f15a-449e-a5da-2eecd181f813",
+      "technique_id": "T1090.002",
+      "technique_ref": "attack-pattern--69b8fd78-40e8-4600-ae4d-662c9d7afdb3",
+      "effect_refs": [
+        "attack-action--0bbd64c0-d6aa-41bc-a13e-a5c267c76521"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--0bbd64c0-d6aa-41bc-a13e-a5c267c76521",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Exfiltration Over C2 Channel",
+      "tactic_id": "TA0010",
+      "tactic_ref": "x-mitre-tactic--9a4e74ab-5008-408c-84bf-a10dfbc53462",
+      "technique_id": "T1041",
+      "technique_ref": "attack-pattern--92d7da27-2d91-488e-a00c-059dc162766d",
+      "effect_refs": [
+        "attack-action--6faf9825-64af-49a1-9cd8-2c0173dd5129"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--14f2d4a6-49b8-4744-bf9a-470cc84b28f4",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Facilitate State Propaganda",
+      "tactic_id": "TA02",
+      "tactic_ref": "x-mitre-tactic--431af018-56ae-406c-9648-4857f074fffc",
+      "technique_id": "T0002",
+      "technique_ref": "attack-pattern--70717452-f7e3-4ce8-956f-39a4d34c5cfb",
+      "effect_refs": [
+        "attack-operator--95fe5427-2805-4d58-a790-1be9b17a55ca"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--6fccf75b-486f-4685-9f40-d5ec3a1acefd",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Degrade Adversary",
+      "tactic_id": "TA02",
+      "tactic_ref": "x-mitre-tactic--431af018-56ae-406c-9648-4857f074fffc",
+      "technique_id": "T0066",
+      "technique_ref": "attack-pattern--d696b89b-9686-42ff-b3c4-5a4d5ecaa17a",
+      "effect_refs": [
+        "attack-operator--95fe5427-2805-4d58-a790-1be9b17a55ca"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--808b0b0a-01a3-454c-9504-668ca1c4b564",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Assess Degree/Type of Media Access",
+      "tactic_id": "TA13",
+      "tactic_ref": "x-mitre-tactic--1e005da9-56cc-4802-af90-b267d17a1ad1",
+      "technique_id": "T0080.005",
+      "technique_ref": "attack-pattern--c729368d-246a-47eb-8e4b-ab5b0a3510ec",
+      "effect_refs": [
+        "attack-operator--95fe5427-2805-4d58-a790-1be9b17a55ca"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--fda372d7-d357-408e-83ca-a68c405a875d",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Develop New Narratives",
+      "tactic_id": "TA14",
+      "tactic_ref": "x-mitre-tactic--fd1e7dd3-63d0-4040-808e-3e61b9ddca86",
+      "technique_id": "T0082",
+      "technique_ref": "attack-pattern--14bec5aa-0823-4dde-9223-ec49a1cea65e",
+      "effect_refs": [
+        "attack-operator--b629c3c1-5dbd-4745-99a9-89c8c96f3cb7"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--ee44723d-dd4b-4828-8c1d-af0ada2b25ba",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Create Anonymous Accounts",
+      "tactic_id": "TA15",
+      "tactic_ref": "x-mitre-tactic--c4eaa2a6-7e86-4eb3-beaa-981a96d4724a",
+      "technique_id": "T0090.001",
+      "technique_ref": "attack-pattern--283453fd-36c5-4d66-b24d-f29ea35fa8a1",
+      "effect_refs": [
+        "attack-operator--4cdbd5ed-f8dd-42fa-adc0-63513e4e87e4",
+        "attack-operator--de56ebab-565f-4617-8f85-0326ae690e83"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--5726d5a6-4d06-4ef5-97ba-90540d0ec14e",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Recruit Malign Actors: Recruit Partisans",
+      "tactic_id": "TA15",
+      "tactic_ref": "x-mitre-tactic--c4eaa2a6-7e86-4eb3-beaa-981a96d4724a",
+      "technique_id": "T0091.002",
+      "technique_ref": "attack-pattern--fe5cf0f2-3792-4cab-b546-a9af7a5aa319",
+      "effect_refs": [
+        "attack-action--990b9424-4063-4380-bd43-1b4af6a4ed5b"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--95e83f14-73c0-4c44-af96-679c890b7ad0",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Develop Owned Media Assets",
+      "tactic_id": "TA15",
+      "tactic_ref": "x-mitre-tactic--c4eaa2a6-7e86-4eb3-beaa-981a96d4724a",
+      "technique_id": "T0095",
+      "technique_ref": "attack-pattern--444c403e-a73f-4b78-9ffd-556f1dd29039",
+      "effect_refs": [
+        "attack-operator--4cdbd5ed-f8dd-42fa-adc0-63513e4e87e4",
+        "attack-action--20892e34-23c4-4c37-ba25-339c3106e5c4"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--64a0d565-8181-4541-bde5-2d4f239fc074",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Compromise Legitimate Accounts",
+      "tactic_id": "TA16",
+      "tactic_ref": "x-mitre-tactic--8f32bafc-edb2-4d3c-9b7e-e42a9147123b",
+      "technique_id": "T0011",
+      "technique_ref": "attack-pattern--4d86424a-26a1-4d9f-bc32-619620a18a8d",
+      "effect_refs": [
+        "attack-operator--4cdbd5ed-f8dd-42fa-adc0-63513e4e87e4"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--990b9424-4063-4380-bd43-1b4af6a4ed5b",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Co-Opt Grassroots Groups",
+      "tactic_id": "TA16",
+      "tactic_ref": "x-mitre-tactic--8f32bafc-edb2-4d3c-9b7e-e42a9147123b",
+      "technique_id": "T0100.002",
+      "technique_ref": "attack-pattern--b43dbee2-e1e2-40e5-bea1-45630d55d30b",
+      "effect_refs": [
+        "attack-action--7a30ae19-4160-4c07-976a-1a25b5df68e4"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--9078a3b2-bcaa-4dfa-b8db-574827619956",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Create Localized Content",
+      "tactic_id": "TA05",
+      "tactic_ref": "x-mitre-tactic--acaf8903-418f-425a-93dc-8e1bfb626876",
+      "technique_id": "T0101",
+      "technique_ref": "attack-pattern--11352e9a-a52b-4ade-ad4f-ec64a15fa1d5",
+      "effect_refs": [
+        "attack-action--f9e8452c-fb5e-4d31-8bf6-c8795955a757",
+        "attack-action--a691b9b9-0fbd-4987-ab37-850ef7c58963",
+        "attack-action--20892e34-23c4-4c37-ba25-339c3106e5c4"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--f44a2496-4eb7-4cd3-8eee-aa7c1e43f7a6",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Use Existing Echo Chambers/Filter Bubbles",
+      "tactic_id": "TA05",
+      "tactic_ref": "x-mitre-tactic--acaf8903-418f-425a-93dc-8e1bfb626876",
+      "technique_id": "T0102.001",
+      "technique_ref": "attack-pattern--39ceaac8-e5f8-49be-95cf-0cbad07dfe72",
+      "effect_refs": [
+        "attack-action--990b9424-4063-4380-bd43-1b4af6a4ed5b"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--be286e51-48ab-4e40-9834-09c3d916ceac",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Select Channels and Affordances: Blogging and Publishing Networks",
+      "tactic_id": "TA07",
+      "tactic_ref": "x-mitre-tactic--3c73d309-b066-44f9-ad81-866a64e438c9",
+      "technique_id": "T0108",
+      "technique_ref": "attack-pattern--d4e35ba1-f83d-41b4-a862-caabb634cc3e",
+      "effect_refs": [
+        "attack-action--f9e8452c-fb5e-4d31-8bf6-c8795955a757"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--c59dcee5-f8d9-4a26-9397-41c09c27aa46",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Select Channels and Affordances: Traditional Media",
+      "tactic_id": "TA07",
+      "tactic_ref": "x-mitre-tactic--3c73d309-b066-44f9-ad81-866a64e438c9",
+      "technique_id": "T0111",
+      "technique_ref": "attack-pattern--314ecce1-6d89-4304-a149-1c3d8fddaf9e",
+      "effect_refs": [
+        "attack-action--f9e8452c-fb5e-4d31-8bf6-c8795955a757"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--f9e8452c-fb5e-4d31-8bf6-c8795955a757",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Post Content",
+      "tactic_id": "TA09",
+      "tactic_ref": "x-mitre-tactic--4a9c3d11-801b-4ee9-a5bc-b5bc042a92f9",
+      "technique_id": "T0115",
+      "technique_ref": "attack-pattern--1997947a-7e08-4ea9-802c-85391d561266",
+      "effect_refs": [
+        "attack-action--c79d81a9-7ae9-47b2-a5db-f8cd54cea7d6",
+        "attack-action--990b9424-4063-4380-bd43-1b4af6a4ed5b",
+        "attack-action--1025a1a0-b803-4e63-a68c-d35df57bdc2c",
+        "attack-action--f85b9a71-b813-4590-8d1f-921d657b7741",
+        "attack-action--62ca4f3e-e6a2-4b3d-821d-cfe705a7d39c",
+        "attack-action--863d942a-86f8-4159-8496-dc4a2b8cd8d7",
+        "attack-action--f44a2496-4eb7-4cd3-8eee-aa7c1e43f7a6",
+        "attack-action--b547e639-08ab-4d69-a1b1-8bbd4f955173",
+        "attack-action--b3660bc5-2ece-4823-9d4d-36d421a165e3",
+        "attack-action--9aeaec47-ebd0-46b7-ac4c-e24a5143d2f9",
+        "attack-action--9be12131-f231-45c0-80e5-8531c9f359b3",
+        "attack-action--0cc3905a-a950-43fc-94df-760717e542aa",
+        "attack-action--9af0ebc0-f3db-47d8-8a29-a252501cecf5",
+        "attack-action--abb59dba-0d4d-4da1-bea8-8456e03daf6f",
+        "attack-action--46a31514-5431-41cb-8931-b37dcb4fe12b",
+        "attack-action--a37ef0fc-7f2e-4b4b-9f58-f34507aa0e03",
+        "attack-action--418effb8-cd32-491c-90d9-9800dd6afc41"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--c79d81a9-7ae9-47b2-a5db-f8cd54cea7d6",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Drive Online Harms: Dox",
+      "tactic_id": "TA18",
+      "tactic_ref": "x-mitre-tactic--f0505ac9-8979-49e4-a87c-d1109536a7db",
+      "technique_id": "T0048.004",
+      "technique_ref": "attack-pattern--5bc895e8-eb26-43ec-8469-ab665092970d"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--324c0124-0c8e-4b15-b6a7-eba5a1f5a3a7",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Conceal People: Use Pseudonyms",
+      "tactic_id": "TA11",
+      "tactic_ref": "x-mitre-tactic--dffcf337-d4d9-449b-aa9c-6a97a891c5a9",
+      "technique_id": "T0128.001",
+      "technique_ref": "attack-pattern--78cf4cd6-a8a0-408f-a5e8-d6f1491aace8"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--a37ef0fc-7f2e-4b4b-9f58-f34507aa0e03",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Conceal Operational Activity: Deny Involvement",
+      "tactic_id": "TA11",
+      "technique_id": "T0129.006"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--9aeaec47-ebd0-46b7-ac4c-e24a5143d2f9",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Measure Effectiveness: Content",
+      "tactic_id": "TA12",
+      "tactic_ref": "x-mitre-tactic--19886784-0e07-474f-803c-30c443e65347",
+      "technique_id": "T0133.002",
+      "technique_ref": "attack-pattern--d2536dd3-53a5-4fc1-b508-1697cf0dafde"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--96cbcf0d-4567-4eb5-8cf1-d5d43bb06349",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Stage Capabilities: Upload Tool",
+      "tactic_id": "TA0042",
+      "tactic_ref": "x-mitre-tactic--d679bca2-e57d-4935-8650-8031c87a4400",
+      "technique_id": "T1608.002",
+      "technique_ref": "attack-pattern--506f6f49-7045-4156-9007-7474cb44ad6d",
+      "effect_refs": [
+        "attack-action--9f0c080c-af8a-49e0-afed-4ca7ad942df7",
+        "attack-action--bda94174-e119-4713-8b7f-881143c01de1"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--15f7d840-5f5c-491b-9296-06447c128fe9",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Obtain Capabilities: Tool",
+      "tactic_id": "TA0042",
+      "tactic_ref": "x-mitre-tactic--d679bca2-e57d-4935-8650-8031c87a4400",
+      "technique_id": "T1588.002",
+      "technique_ref": "attack-pattern--a2fdce72-04b2-409a-ac10-cc1695f4fce0",
+      "effect_refs": [
+        "attack-action--96cbcf0d-4567-4eb5-8cf1-d5d43bb06349"
+      ]
+    },
+    {
+      "type": "attack-operator",
+      "id": "attack-operator--0faab550-3716-4b96-85fd-36d9c6ef9452",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "operator": "AND",
+      "effect_refs": [
+        "attack-action--6fc41abf-e6bf-4327-9a34-3cc2c8e4a76c"
+      ]
+    },
+    {
+      "type": "attack-operator",
+      "id": "attack-operator--7d102869-e109-4eaf-9748-610003360754",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "operator": "AND",
+      "effect_refs": [
+        "attack-action--5164d617-5e01-4587-b0aa-e6c42e6ff78f",
+        "attack-action--608d50a9-fc27-4f5e-b2b3-17855e0cd966"
+      ]
+    },
+    {
+      "type": "attack-operator",
+      "id": "attack-operator--b3053445-9311-4780-99dd-688cf59a71d3",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "operator": "AND",
+      "effect_refs": [
+        "attack-action--54075682-f0bb-4575-9bc5-36375bb226e7",
+        "attack-action--c0a26220-7f40-4291-b6b2-858b87b56304",
+        "attack-action--14a41984-64dd-493d-8074-b7171f219297",
+        "attack-action--016938e9-5a4f-4ba0-b01a-a23cf0ca0134",
+        "attack-action--a8bf9731-1f6d-4ce1-bdbb-6a13ea7ed3cf"
+      ]
+    },
+    {
+      "type": "attack-operator",
+      "id": "attack-operator--50df08e0-3795-40dd-88b8-f3944322ba11",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "operator": "AND",
+      "effect_refs": [
+        "attack-action--0bbd64c0-d6aa-41bc-a13e-a5c267c76521",
+        "attack-action--92cc3f0a-1913-4997-990b-5c1fa2592e12"
+      ]
+    },
+    {
+      "type": "attack-operator",
+      "id": "attack-operator--95fe5427-2805-4d58-a790-1be9b17a55ca",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "operator": "AND",
+      "effect_refs": [
+        "attack-action--8578d49e-3b36-4ae8-b370-8999d1f27ee8",
+        "attack-action--fda372d7-d357-408e-83ca-a68c405a875d",
+        "attack-action--9cdc6539-f4f9-40fd-944c-2a0fec470859"
+      ]
+    },
+    {
+      "type": "attack-operator",
+      "id": "attack-operator--f3659d95-ddca-4474-9e95-2744f3ce46a1",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "operator": "AND",
+      "effect_refs": [
+        "attack-action--863d942a-86f8-4159-8496-dc4a2b8cd8d7",
+        "attack-action--1025a1a0-b803-4e63-a68c-d35df57bdc2c",
+        "attack-action--62ca4f3e-e6a2-4b3d-821d-cfe705a7d39c"
+      ]
+    },
+    {
+      "type": "attack-operator",
+      "id": "attack-operator--4cdbd5ed-f8dd-42fa-adc0-63513e4e87e4",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "operator": "AND",
+      "effect_refs": [
+        "attack-action--f9e8452c-fb5e-4d31-8bf6-c8795955a757"
+      ]
+    },
+    {
+      "type": "attack-operator",
+      "id": "attack-operator--de56ebab-565f-4617-8f85-0326ae690e83",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "operator": "AND",
+      "effect_refs": [
+        "attack-action--324c0124-0c8e-4b15-b6a7-eba5a1f5a3a7"
+      ]
+    },
+    {
+      "type": "attack-operator",
+      "id": "attack-operator--89033915-6ead-453e-81d7-190231a0224a",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "operator": "AND",
+      "effect_refs": [
+        "attack-action--38e6b9f6-c3b9-4c5d-9c70-e811148960a0",
+        "attack-action--74a81798-f985-4f77-aeb7-07287a0bb306"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--145bd434-b8f7-45b6-b299-25e7a9524fed",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Drive-by Compromise",
+      "tactic_id": "TA0001",
+      "tactic_ref": "x-mitre-tactic--ffd5bcee-6e16-4dd2-8eca-7b3beedf33ca",
+      "technique_id": "T0817",
+      "technique_ref": "attack-pattern--7830cfcf-b268-4ac0-a69e-73c6affbae9a",
+      "description": "FaceMusic was advertised as an embedded music player for Chrome. User visits the chrome plug-in website for FaceMusic and installs the malware.",
+      "effect_refs": [
+        "attack-action--418effb8-cd32-491c-90d9-9800dd6afc41"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--c627c849-7523-485e-8535-71c72c8cf11f",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Continue to Amplify",
+      "tactic_id": "TA11",
+      "tactic_ref": "x-mitre-tactic--dffcf337-d4d9-449b-aa9c-6a97a891c5a9",
+      "technique_id": "T0060",
+      "technique_ref": "attack-pattern--ad410829-2fb3-490b-b470-f5f859d45942"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--418effb8-cd32-491c-90d9-9800dd6afc41",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Bots Amplify via Automated Forwarding and Reposting",
+      "tactic_id": "TA17",
+      "tactic_ref": "x-mitre-tactic--c198a2b6-0c46-4b69-866a-1764782c2e07",
+      "technique_id": "T0049.003",
+      "technique_ref": "attack-pattern--e6ab2793-a059-4354-bb60-045afb019833",
+      "description": "FaceMusic malware pulls browsers into a botnet. This botnet is used to promote IRA content.",
+      "effect_refs": [
+        "attack-action--c627c849-7523-485e-8535-71c72c8cf11f"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--20892e34-23c4-4c37-ba25-339c3106e5c4",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Create Content Farms",
+      "tactic_id": "TA15",
+      "tactic_ref": "x-mitre-tactic--c4eaa2a6-7e86-4eb3-beaa-981a96d4724a",
+      "technique_id": "T0096.001",
+      "technique_ref": "attack-pattern--3875e864-64d8-4ceb-8aa2-ef6e79224a85",
+      "description": "Amplifying content through troll farms, including those supported through FaceMusic.",
+      "effect_refs": [
+        "attack-action--f9e8452c-fb5e-4d31-8bf6-c8795955a757"
+      ]
+    },
+    {
+      "type": "attack-operator",
+      "id": "attack-operator--b629c3c1-5dbd-4745-99a9-89c8c96f3cb7",
+      "spec_version": "2.1",
+      "created": "2025-04-01T05:40:52.186Z",
+      "modified": "2025-04-01T05:40:52.186Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "operator": "AND",
+      "effect_refs": [
+        "attack-action--9078a3b2-bcaa-4dfa-b8db-574827619956",
+        "attack-action--20892e34-23c4-4c37-ba25-339c3106e5c4"
+      ]
+    }
+  ]
+}
