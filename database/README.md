@@ -4,6 +4,7 @@
 > These changes will affect globally:
 >   - TTP confidence ratings,
 >   - TTP selection reasoning,
+> 
 > and split the GRU & IRA 2016 US Election Campaign into distinct operations.
 
 # Cyber-Influence-Operation-Analysis
