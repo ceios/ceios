@@ -1,5 +1,6 @@
 > [!IMPORTANT]
 > ***The database is being updated in accordance with revised methodology.***
+> 
 > Changes are expected to be finalised and the database updated early to mid December.
 > These changes will affect globally:
 >   - TTP confidence ratings,
